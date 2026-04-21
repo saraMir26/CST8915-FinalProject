@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: bestbuy-config
+  namespace: bestbuy
+data:
+  MONGO_DB_NAME: bestbuydb
+  MONGO_HOST: mongodb
+  MONGO_PORT: "27017"
