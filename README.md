@@ -35,13 +35,12 @@ This project is organized into separate repositories:
 
 The application follows a microservices-based architecture deployed on AKS.
 
-Store-Front allows customers to browse products and place orders
-Store-Admin allows administrators to view and process orders
-Product-Service provides product data
-Order-Service stores submitted orders in MongoDB
-Makeline-Service reads pending orders from MongoDB and updates their processing status
-MongoDB is deployed as a StatefulSet to provide persistent storage
-
+Store-Front allows customers to browse products and place orders.   
+Store-Admin allows administrators to view and process orders.     
+Product-Service provides product data.    
+Order-Service stores submitted orders in MongoDB.   
+Makeline-Service reads pending orders from MongoDB and updates their processing status.   
+MongoDB is deployed as a StatefulSet to provide persistent storage.    
 
 
 - Store-Front → Product-Service
@@ -102,10 +101,10 @@ All Kubernetes resources are deployed using the following files in this reposito
 ### Deployment steps:
 
 
-kubectl apply -f namespace.yaml
-kubectl apply -f secrets.yaml
-kubectl apply -f config-maps.yaml
-kubectl apply -f bestbuy-all-in-one.yaml
+kubectl apply -f namespace.yaml   
+kubectl apply -f secrets.yaml    
+kubectl apply -f config-maps.yaml   
+kubectl apply -f bestbuy-all-in-one.yaml   
 
 ---
 ## Kubernetes Verification Commands
@@ -163,20 +162,18 @@ base64 < ~/.kube/config | tr -d '\n'
 Copy the output and save it as the GitHub secret KUBE_CONFIG_DATA
 
 ----
-## I/CD Pipelines
+## CI/CD Pipelines
 
 Each microservice repository has its own GitHub Actions pipeline.
 
-
-Each pipeline performs the following steps:
-
-Checks out the repository source code
-Builds the Docker image
-Pushes the image to Docker Hub
-Authenticates to AKS using kubeconfig
-Updates the Kubernetes deployment image
-Verifies rollout success
-Trigger
+Each pipeline performs the following steps:   
+- Checks out the repository source code   
+- Builds the Docker image  
+- Pushes the image to Docker Hub  
+- Authenticates to AKS using kubeconfig  
+- Updates the Kubernetes deployment image   
+- Verifies rollout success  
+- Trigger  
 
 Pipelines are configured to run on push and can also be triggered manually through GitHub Actions.
 
@@ -209,13 +206,13 @@ Pipelines are configured to run on push and can also be triggered manually throu
 This project was developed using the Algonquin Pet Store architecture as a starting point and adapted to meet the Best Buy final project requirements.
 
 ---- 
-## Acknowledgment
 
+<sub>
+  <br><strong>Acknowledgment</strong><br>
 This project was developed by Sara Mirzaei as part of the CST8915 final project.
-
-During development, AI tools (such as ChatGPT) were used as support resource for:
+During development, AI tools (such as ChatGPT) were used as a support resource for:
 - troubleshooting errors in Kubernetes and Docker deployments
 - refining code and configuration files
 - improving documentation and project structure
-
 All implementation, configuration, and final validation were performed by the author.
+</sub>
