@@ -195,9 +195,8 @@ Pipelines are configured to run on push and can also be triggered manually throu
 
 ## Demo Video
 
- YouTube demo link here:
-
-[Insert YouTube link]
+ 
+[![Watch the demo](https://img.youtube.com/vi/oRSEHOfwGpQ/hqdefault.jpg)](https://www.youtube.com/watch?v=oRSEHOfwGpQ)
 
 -----
 
