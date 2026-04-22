@@ -28,9 +28,9 @@ The system follows a microservices architecture:
 - Store-Front → Order-Service → MongoDB
 - Store-Admin → Makeline-Service → MongoDB
 - Product-Service → MongoDB
-- MongoDB deployed as StatefulSet
+- MongoDB deployed as a StatefulSet
 
-// I need to insert the diagram 
+![Diagram](/Diagram/diagram.png)
 
 ---
 
