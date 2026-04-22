@@ -79,14 +79,15 @@ MongoDB is deployed as a StatefulSet to provide persistent storage.
 
 ## Docker Hub Images
 
-The following Docker images are used for deployment:
+The following Docker images are used in this project:
 
-- sara21167/store-front-finalproject
-- sara21167/store-admin-finalproject
-- sara21167/order-service-finalproject
-- sara21167/product-service-finalproject
-- sara21167/makeline-service-finalproject
-
+| Service | Image |
+|--------|------|
+| Store-Front | https://hub.docker.com/r/sara21167/store-front-finalproject |
+| Store-Admin | https://hub.docker.com/r/sara21167/store-admin-finalproject |
+| Order-Service | https://hub.docker.com/r/sara21167/order-service-finalproject |
+| Product-Service | https://hub.docker.com/r/sara21167/product-service-finalproject |
+| Makeline-Service | https://hub.docker.com/r/sara21167/makeline-service-finalproject |
 ----
 ## Kubernetes Deployment 
 
